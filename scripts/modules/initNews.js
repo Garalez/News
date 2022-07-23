@@ -37,7 +37,6 @@ export const initSearchNews = () => {
     fetchRequest('https://newsapi.org/v2/top-headlines?country=ru', {
       callback(err, data) {
         data.articles.length = 4;
-        console.log(data);
         return renderHeadlines(err, data);
       },
       headers: {

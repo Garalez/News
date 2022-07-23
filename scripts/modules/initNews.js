@@ -12,7 +12,10 @@ export const initHeadlinesNews = () => {
   return Promise.all([
     fetchRequest('https://newsapi.org/v2/top-headlines?country=ru', {
       callback(err, data) {
-        data.articles.length = 8;
+        if (data.articles.length > 8) {
+          data.articles.length = 8;
+        }
+        console.log(data);
         return renderHeadlines(err, data);
       },
       headers: {
@@ -26,7 +29,9 @@ export const initSearchNews = () => {
   return Promise.all([
     fetchRequest(`https://newsapi.org/v2/everything?q=${form.search.value}`, {
       callback(err, data) {
-        data.articles.length = 8;
+        if (data.articles.length > 8) {
+          data.articles.length = 8;
+        }
         return searchNews(err, data);
       },
       headers: {
@@ -36,7 +41,9 @@ export const initSearchNews = () => {
 
     fetchRequest('https://newsapi.org/v2/top-headlines?country=ru', {
       callback(err, data) {
-        data.articles.length = 4;
+        if (data.articles.length > 4) {
+          data.articles.length = 4;
+        }
         return renderHeadlines(err, data);
       },
       headers: {

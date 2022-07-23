@@ -10,6 +10,7 @@ export const searchNews = (err, data) => {
     console.error(err);
     return;
   }
+  console.log(data);
 
   const template = document.createDocumentFragment();
 
@@ -25,7 +26,7 @@ export const searchNews = (err, data) => {
   }
 
   searchSection.insertAdjacentHTML('afterbegin', `
-    <h1 class="search__title container">По вашему запросу “${form.search.value}” найдено 8 результатов</h1>
+    <h1 class="search__title container">По вашему запросу “${form.search.value}” найдено ${data.articles.length} результатов</h1>
     <span class="search__underline underline"></span>
     <div class="search__wrapper container">
       <ul class="search__list">
@@ -33,6 +34,8 @@ export const searchNews = (err, data) => {
     </div>
     <span class="search__underline underline"></span>
   `);
+
+  // if (data.totalResults)
 
   const searchNews = data.articles.map(item => {
     const time = item.publishedAt.replace(/[a-zа-яё]/gi, ` `);

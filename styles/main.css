@@ -4,12 +4,12 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 130%;
-  color: #212121;
+  color: var(--black);
 }
 
 .underline {
   display: block;
-  border-bottom: 1px solid #E6E6E6;
+  border-bottom: 1px solid var(--soft-grey);
 }
 
 .search__list,
@@ -36,7 +36,7 @@
 .news__item-title {
   display: block;
   max-width: 240px;
-  color: #212121;
+  color: var(--black);
   font-weight: 700;
   font-size: 16px;
   line-height: 130%;
@@ -48,6 +48,7 @@
   font-size: 12px;
   line-height: 130%;
   margin-bottom: 13px;
+  color: var(--black);
 }
 
 .search__item-info,
@@ -57,6 +58,7 @@
   font-weight: 300;
   font-size: 10px;
   line-height: 130%;
+  color: var(--grey);
 }
 
 .search__item-links,

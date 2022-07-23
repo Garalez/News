@@ -1,5 +1,5 @@
 header {
-  border-bottom: 1px solid #E6E6E6;
+  border-bottom: 1px solid var(--soft-grey);
 }
 
 .navigation__list {
@@ -19,7 +19,7 @@ header {
   width: 500px;
   height: 44px;
   padding-left: 20px;
-  border: 1px solid #E6E6E6;
+  border: 1px solid var(--soft-grey);
   border-radius: 22px;
   font-weight: 300;
   font-size: 14px;
@@ -44,11 +44,11 @@ header {
   width: 320px;
   height: 44px;
   padding-left: 20px;
-  border: 1px solid #E6E6E6;
+  border: 1px solid var(--soft-grey);
   border-radius: 22px;
   -webkit-appearance: none;
   -moz-appearance: none;
-  color: #212121;
+  color: var(--black);
   font-weight: 300;
   font-size: 14px;
   line-height: 80%;
@@ -63,7 +63,7 @@ header {
   width: 14.166666030883789px;
   border-left: 0.5em solid transparent;
   border-right: 0.5em solid transparent;
-  border-top: 0.5em solid #212121;
+  border-top: 0.5em solid var(--black);
   pointer-events: none;
 }
 

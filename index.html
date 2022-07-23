@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="./scripts/index.js" type="module"></script>
+</head>
+<body>
+  <header>
+    <nav class="navigation container">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <img class="navigation__item-logo" src="./img/logo.svg" alt="logo">
+        </li>
+        <li class="navigation__item">
+          <form action="" class="navigation__search-wrapper">
+            <input class="navigation__search-input" type="search" name="search" placeholder="Я хочу узнать про..." required>
+            <button class="navigation__search-button" type="submit">
+            <img src="./img/loupe.svg" alt="loupe">
+            </button>
+            <select class="navigation__search-select" name="" id="">
+              <option class="navigation__search-options" value="">Россия</option>
+            </select>
+            <span class="navigation__custom-button"></span>
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="search"></section>
+
+    <section class="news">
+      <h1 class="news__title container">Свежие новости</h1>
+      <span class="news__underline underline"></span>
+      <div class="news__wrapper container">
+        <ul class="news__list">
+          <!-- <li class="news__item">
+            <img class="news__item-img" src="./img/unsplash_xsGxhtAsfSA.jpg" alt="">
+            <p class="news__item-title">
+              В России начали выпускать суверенные печатные платы — в них только отечественное сырьё и материалы
+            </p>
+            <p class="news__item-subtitle">
+              Холдинг «Российские космические системы», входящий в состав «Роскосмоса»...
+            </p>
+            <div class="news__item-info">
+              <p class="news__item-date"><span class="news__item-day">16/03/2022</span><span class="news__item-time">11:06</span></p>
+              <p class="news__item-author">Эрик Крипке</p>
+            </div>
+          </li>
+          <li class="news__item">
+            <img class="news__item-img" src="./img/unsplash_xsGxhtAsfSA.jpg" alt="">
+            <p class="news__item-title">
+              В России начали выпускать суверенные печатные платы — в них только отечественное сырьё и материалы
+            </p>
+            <p class="news__item-subtitle">
+              Холдинг «Российские космические системы», входящий в состав «Роскосмоса»...
+            </p>
+            <div class="news__item-info">
+              <p class="news__item-date"><span class="news__item-day">16/03/2022</span><span class="news__item-time">11:06</span></p>
+              <p class="news__item-author">Эрик Крипке</p>
+            </div>
+          </li>
+          <li class="news__item">
+            <img class="news__item-img" src="./img/unsplash_xsGxhtAsfSA.jpg" alt="">
+            <p class="news__item-title">
+              В России начали выпускать суверенные печатные платы — в них только отечественное сырьё и материалы
+            </p>
+            <p class="news__item-subtitle">
+              Холдинг «Российские космические системы», входящий в состав «Роскосмоса»...
+            </p>
+            <div class="news__item-info">
+              <p class="news__item-date"><span class="news__item-day">16/03/2022</span><span class="news__item-time">11:06</span></p>
+              <p class="news__item-author">Эрик Крипке</p>
+            </div>
+          </li>
+          <li class="news__item">
+            <img class="news__item-img" src="./img/unsplash_xsGxhtAsfSA.jpg" alt="">
+            <p class="news__item-title">
+              В России начали выпускать суверенные печатные платы — в них только отечественное сырьё и материалы
+            </p>
+            <p class="news__item-subtitle">
+              Холдинг «Российские космические системы», входящий в состав «Роскосмоса»...
+            </p>
+            <div class="news__item-info">
+              <p class="news__item-date"><span class="news__item-day">16/03/2022</span><span class="news__item-time">11:06</span></p>
+              <p class="news__item-author">Эрик Крипке</p>
+            </div>
+          </li>
+          <li class="news__item">
+            <img class="news__item-img" src="./img/unsplash_xsGxhtAsfSA.jpg" alt="">
+            <p class="news__item-title">
+              В России начали выпускать суверенные печатные платы — в них только отечественное сырьё и материалы
+            </p>
+            <p class="news__item-subtitle">
+              Холдинг «Российские космические системы», входящий в состав «Роскосмоса»...
+            </p>
+            <div class="news__item-info">
+              <p class="news__item-date"><span class="news__item-day">16/03/2022</span><span class="news__item-time">11:06</span></p>
+              <p class="news__item-author">Эрик Крипке</p>
+            </div>
+          </li>
+          <li class="news__item">
+            <img class="news__item-img" src="./img/unsplash_xsGxhtAsfSA.jpg" alt="">
+            <p class="news__item-title">
+              В России начали выпускать суверенные печатные платы — в них только отечественное сырьё и материалы
+            </p>
+            <p class="news__item-subtitle">
+              Холдинг «Российские космические системы», входящий в состав «Роскосмоса»...
+            </p>
+            <div class="news__item-info">
+              <p class="news__item-date"><span class="news__item-day">16/03/2022</span><span class="news__item-time">11:06</span></p>
+              <p class="news__item-author">Эрик Крипке</p>
+            </div>
+          </li>
+          <li class="news__item">
+            <img class="news__item-img" src="./img/unsplash_xsGxhtAsfSA.jpg" alt="">
+            <p class="news__item-title">
+              В России начали выпускать суверенные печатные платы — в них только отечественное сырьё и материалы
+            </p>
+            <p class="news__item-subtitle">
+              Холдинг «Российские космические системы», входящий в состав «Роскосмоса»...
+            </p>
+            <div class="news__item-info">
+              <p class="news__item-date"><span class="news__item-day">16/03/2022</span><span class="news__item-time">11:06</span></p>
+              <p class="news__item-author">Эрик Крипке</p>
+            </div>
+          </li>
+          <li class="news__item">
+            <img class="news__item-img" src="./img/unsplash_xsGxhtAsfSA.jpg" alt="">
+            <p class="news__item-title">
+              В России начали выпускать суверенные печатные платы — в них только отечественное сырьё и материалы
+            </p>
+            <p class="news__item-subtitle">
+              Холдинг «Российские космические системы», входящий в состав «Роскосмоса»...
+            </p>
+            <div class="news__item-info">
+              <p class="news__item-date"><span class="news__item-day">16/03/2022</span><span class="news__item-time">11:06</span></p>
+              <p class="news__item-author">Эрик Крипке</p>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span class="underline"></span>
+    <div class="container">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <img class="navigation__item-logo" src="./img/logo.svg" alt="logo">
+        </li>
+        <li class="footer__item copyright">© 2020-2022 News</li>
+        <li class="footer__item media">
+          <img src="./img/media1.svg" alt="twitter">
+          <img src="./img/media2.svg" alt="media">
+          <img src="./img/media3.svg" alt="vkontakte">
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

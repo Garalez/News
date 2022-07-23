@@ -1,0 +1,17 @@
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 87px;
+}
+
+.copyright {
+  padding: 33px 0 0 40px;
+  font-size: 12px;
+  line-height: 130%;
+}
+
+.media {
+  display: flex;
+  gap: 15px;
+}
